@@ -1,0 +1,17 @@
+name: configure aws creds
+on:
+    workflow_dispatch
+
+permissions:
+    id-token: write
+    contents: read
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: configure the credentials
+              uses: aws-actions/configure-aws-credentials@v4.1.0
+              with:
+                role-to-assume: arn:aws:iam::884348119369:role/github-config-aws-creds-Role-qySS6cCdzUMu
+                region: us-west-2
