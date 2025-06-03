@@ -14,4 +14,4 @@ jobs:
               uses: aws-actions/configure-aws-credentials@v4.1.0
               with:
                 role-to-assume: arn:aws:iam::884348119369:role/github-config-aws-creds-Role-qySS6cCdzUMu
-                region: us-west-2
+                aws-region: us-west-2
